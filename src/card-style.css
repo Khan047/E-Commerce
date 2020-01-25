@@ -1,0 +1,34 @@
+body{
+    background:radial-gradient(#939393,#7e7e7e,#696969)
+}
+
+.card{
+    width: 20rem;
+    background: #3f3f3f;
+    background-color:#3f3f3f !important;
+    
+}
+
+
+.card:hover{
+    background: #696969!important;
+    color: #7e7e7e!important;
+}
+
+.Button1 {
+    text-align: center;
+    height: 35px;
+    display: inline-block;
+    padding: 7px 14px 10px 9px;
+    text-transform: uppercase;
+    user-select: none;
+    touch-action: manipulation;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 700;
+    width: auto;
+    background-color: #031a44;
+    box-shadow: 0 6px 10px 0 rgba(255, 255, 255, 0.31);
+    color:"white";
+    white-space: nowrap;
+}
