@@ -1,7 +1,8 @@
 import React from  'react';
 
 import "./card-style.css"
-const Card = props =>{
+function Card(props){
+ 
 
     return (
         <div className="card text-center">
@@ -11,7 +12,8 @@ const Card = props =>{
             <div className="card-body text-light">
                 <h4 className="card-title">{props.title}</h4>
                 <p className="card-text text-secondary text-light">
-                    <button className="Button1">ADD TO CART</button>
+                    ID OF THIS ELEMENT IS ->  {props.imgid}
+                    <button className="Button1" style={{color:"white"}} onClick={()=>{props.handleItem(props.imgid)}}>ADD TO CART</button>
                    {/* <a href="#"> <FaLongArrowAltUp /> </a> {props.upvotes}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}  <a href="#"><FaEye/></a>  {props.views}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}  <a href="#"><FaCommentAlt/>   </a>{props.comments} */}
                 </p> 
                     {/* <a href="#" className="btn btn-outline-success">Go anywhere</a> */}

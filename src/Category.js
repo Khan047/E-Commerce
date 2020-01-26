@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
 import Main from './main';
-function Category() {
+import PostList from './postlist';
+
+function Category(props) {
   return (
     <div className="App">
-     <Main/>
+     {/* <Main/> */}
+     <PostList {...props} handleitem={props.handleItem}/>
+     
     </div>
   );
 }
